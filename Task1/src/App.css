@@ -1,0 +1,90 @@
+body {
+  background-color: #d6dfd3;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #a5f09e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 40px auto;
+  overflow-x: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.add-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-countdown input[type="text"],
+.add-countdown input[type="datetime-local"] {
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 1rem;
+  border: 1px solid #f1a0a0;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.add-countdown button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #8b37da;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-countdown button:hover {
+  background-color: #0056b3;
+}
+
+.countdown-list {
+  display: table-row;
+  flex-wrap: nowrap;
+  gap: 80px;
+  overflow-x: auto;
+}
+
+.countdown-item {
+  position: relative;
+  background-color: #dd66c9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  flex-shrink: 0;
+  flex:column;
+}
+
+.countdown-item button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.countdown-item button:hover {
+  background-color: darkred;
+}
